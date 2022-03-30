@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Movie from "./Movie";
 
-function App() {
+function Home() {
   const [loading, setLoading] = useState(true); //로딩
   const [movies, setMovies] = useState([]); //영화 리스트
   const getMovies = async() => {
@@ -38,4 +38,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;
