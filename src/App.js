@@ -7,7 +7,7 @@ function App() {
   const onSubmit = (event) => {
     event.preventDefault();
     console.log(toDo);
-    if(todo === "") {
+    if(toDo === "") {
       return;
     }
     setToDo(""); //state는 직접적으로 수정 X
@@ -23,7 +23,9 @@ function App() {
       </form>
       <hr />
       <ul>
-        {toDos.map((item) => <li>{item}</li>)}
+        {toDos.map((item, index) => ( //Map를 이용한 li추가
+          <li key={index}>{item}</li>
+        ))}
       </ul>
     </div>
   );
