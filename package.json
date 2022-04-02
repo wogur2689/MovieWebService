@@ -19,7 +19,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "gh-pages -d",
+    "deploy": "gh-pages -d build",
     "predeploy": "npm run build"
   },
   "eslintConfig": {
@@ -40,5 +40,5 @@
       "last 1 safari version"
     ]
   },
-  "hompage": "https://wogur2689.github.io/MovieWebServiceDev"
+  "homepage": "https://wogur2689.github.io/MovieWebService"
 }
